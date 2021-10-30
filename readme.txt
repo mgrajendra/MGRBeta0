@@ -5,16 +5,18 @@
 
 Page Info:
 -----------------------
-Name: 		Nirav Soni
+Name: 		Rajendra M G
 Version: 	1.0
-Author: 	nirav soni
+Author: 	Rajendra M G
 Website: 	https://www.niravinfo.github.io
 
 
 Changelog:
 -----------------------
-Version 1.0 26-09-2018
+Version 1.0 26-09-2015
 - initial release
+Version 1.0 31-10-2021
+- revised & updated release
 
 
 Credits:
