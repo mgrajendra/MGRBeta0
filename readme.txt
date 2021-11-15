@@ -8,7 +8,7 @@ Page Info:
 Name: 		Rajendra M G
 Version: 	1.0
 Author: 	Rajendra M G
-Website: 	https://www.niravinfo.github.io
+Website: 	https://mgrajendra.github.io
 
 
 Changelog:
