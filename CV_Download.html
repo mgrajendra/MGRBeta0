@@ -1,0 +1,35 @@
+<html>
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XBMXE1FYSH"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-XBMXE1FYSH');
+    </script>
+    <title>Start Auto Download file</title>
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script>
+        $(function () {
+            $('a[data-auto-download]').each(function () {
+                var $this = $(this);
+                setTimeout(function () {
+                    window.location = $this.attr('href');
+                }, 2000);
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+        <p>
+            The download should start shortly. If it doesn't, click
+            <a data-auto-download href="https://bit.ly/RajendraMgCV">here</a>.
+            <Br>
+            Please use alternative download link if above link doesn't work click
+            <a data-auto-download href="https://drive.google.com/uc?export=download&id=1WiTezzkgKbvGp5u_WHjYoBZoYyu7SfuR">here</a>.
+        </p>
+    </div>
+</body>
+</html>
