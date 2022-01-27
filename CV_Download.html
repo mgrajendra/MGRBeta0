@@ -13,15 +13,9 @@
     <link rel="shortcut icon" type="image/icon" href="assets/logo/favicon.png" />
     <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script>
-        window.setInterval('refresh()', 10000);
-        $(function () {
-            $('a[file-auto-download]').each(function () {
-                var $this = $(this);
-                setTimeout(function () {
-                    window.location = $this.attr('href');
-                }, 2000);
-            });
-        });
+        var downloadTimeout = setTimeout(function () {
+            window.location = document.getElementById('downloadLink').href;
+        }, 2000);
         $(function () {
             $('a[auto-redirect]').each(function () {
                 var $this = $(this);
@@ -36,8 +30,8 @@
     <div class="wrapper">
         <p>
             File download should start shortly. If file download failed, please click
-            <a file-auto-download href="https://bit.ly/RajendraMGCV">here</a> or
-            <a file-auto-download href="https://drive.google.com/uc?export=download&id=1WiTezzkgKbvGp5u_WHjYoBZoYyu7SfuR">here</a> (alternate location).
+            <a id="downloadLink" href="https://bit.ly/RajendraMGCV">here</a> or
+            <a id="downloadLink" href="https://drive.google.com/uc?export=download&id=1WiTezzkgKbvGp5u_WHjYoBZoYyu7SfuR">here</a> (alternate location).
         </p>
         <p>
             After file download page will be redirect to home page, If doesn't redirected, please click
