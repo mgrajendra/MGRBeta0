@@ -16,14 +16,9 @@
         var downloadTimeout = setTimeout(function () {
             window.location = document.getElementById('downloadLink').href;
         }, 2000);
-        $(function () {
-            $('a[auto-redirect]').each(function () {
-                var $this = $(this);
-                setTimeout(function () {
-                    window.location = $this.attr('href');
-                }, 20000);
-            });
-        });
+        var downloadTimeout = setTimeout(function () {
+            window.location = document.getElementById('auto-redirect').href;
+        }, 20000);
     </script>
 </head>
 <body>
@@ -35,13 +30,13 @@
         </p>
         <p>
             After file download page will be redirect to home page, If doesn't redirected, please click
-            <a auto-redirect href="../Index.html">here</a>.
+            <a id="auto-redirect" href="..">here</a>.
         </p>
     </div>
     <p class="text-white font-weight-bold">
         Your Visitor No:
         <!-- Start of WebFreeCounter Code -->
-        <a href="Index.html"><img src="https://www.webfreecounter.com/hit.php?id=gmpoakp&nd=6&style=71" border="0" alt="visitor counter"></a>
+        <a href=".."><img src="https://www.webfreecounter.com/hit.php?id=gmpoakp&nd=6&style=71" border="0" alt="visitor counter"></a>
         <!-- End of WebFreeCounter Code -->
     </p>
 </body>
