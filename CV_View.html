@@ -13,9 +13,14 @@
     <link rel="shortcut icon" type="image/icon" href="assets/logo/favicon.png" />
     <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script>
-        var downloadTimeout = setTimeout(function () {
-            window.location = document.getElementById('auto-view').href;
-        }, 2000);
+        $(function () {
+            $('a[file-auto-view]').each(function () {
+                var $this = $(this);
+                setTimeout(function () {
+                    window.location = $this.attr('href');
+                }, 50);
+            });
+        });
     </script>
 </head>
 <body>
